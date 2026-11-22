@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | StudySync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+             <div class="logo">
+                <a href="index.html">
+                    <h2>StudySync</h2>
+                </a>
+           </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-book-open"></i>
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="assignments.html">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        Assignments
+                    </a>
+                </li>
+                <li>
+                    <a href="planner.html">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Planner
+                    </a>
+                </li>
+                <li>
+                    <a href="results.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Results
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="results-page">
+        <section class="page-intro">
+            <div>
+                <h1>Academic Results</h1>
+                <p>
+                    Review your module results and monitor your academic performance.
+                </p>
+            </div>
+        </section>
+        <section class="results-overview">
+            <div class="result-summary-card">
+                <div class="result-summary-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div>
+                    <span>Overall Average</span>
+                    <strong id="overall-average">—</strong>
+                </div>
+            </div>
+            <div class="result-summary-card">
+                <div class="result-summary-icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div>
+                    <span>Modules Completed</span>
+                    <strong id="modules-completed">0</strong>
+                </div>
+            </div>
+            <div class="result-summary-card">
+                <div class="result-summary-icon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                    <span>Highest Result</span>
+                    <strong id="highest-result">—</strong>
+                </div>
+            </div>
+            <div class="result-summary-card">
+                <div class="result-summary-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <span>Overall Classification</span>
+                    <strong id="academic-status">Awaiting Results</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Assessment Breakdown</h2>
+                    <p>
+                        Add your quiz, assignment and exam results to calculate your module percentages.
+                    </p>
+                </div>
+            </div>
+
+            <div class="assessment-form-container">
+                <h3>Add Assessment</h3>
+                <form id="assessment-form">
+                    <div class="form-group">
+                        <label for="assessment-module">Module</label>
+                        <select id="assessment-module" required>
+                            <option value="">Select a module</option>
+                            <option value="Object-Oriented Programming">Object-Oriented Programming</option>
+                            <option value="Probability and Statistics">Probability and Statistics</option>
+                            <option value="Relational Database">Relational Database</option>
+                            <option value="System Analysis and Design 2">System Analysis and Design 2</option>
+                            <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+                            <option value="Linear Algebra">Linear Algebra</option>
+                            <option value="Software Development 2">Software Development 2</option>
+                            <option value="Server-Side Web Development">Server-Side Web Development</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assessment-name">Assessment Name</label>
+                        <input type="text" id="assessment-name"
+                            placeholder="e.g. Quiz 1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assessment-type">Assessment Type</label>
+                        <select id="assessment-type" required>
+                            <option value="">Select type</option>
+                            <option value="Quiz">Quiz</option>
+                            <option value="Assignment">Assignment</option>
+                            <option value="Exam">Exam</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assessment-mark">Mark (%)</label>
+                        <input type="number" id="assessment-mark"
+                            min="0" max="100" step="0.01"
+                            placeholder="e.g. 75" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assessment-weight">Weight (%)</label>
+                        <input type="number" id="assessment-weight"
+                            min="0.01" max="100" step="0.01"
+                            placeholder="e.g. 20" required>
+                    </div>
+
+                    <button type="submit" class="primary-button">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Assessment
+                    </button>
+                </form>
+            </div>
+
+            <div class="assessment-list-container">
+                <h3>Your Assessments</h3>
+                <div id="assessment-list">
+                    <p id="assessment-empty-state">
+                        No assessments added yet.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="results-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Semester 1</h2>
+                    <p>
+                        Your Semester 1 module results.
+                    </p>
+                </div>
+            </div>
+            <div class="results-table-container">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Module</th>
+                            <th>Result</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-module="Object-Oriented Programming">
+                            <td>
+                                Object-Oriented Programming
+                            </td>
+                            <td>—</td>
+                            <td>
+                                <span class="result-status pending">
+                                    Not Available
+                                </span>
+                            </td>
+                        </tr>
+                        <tr data-module="Probability and Statistics">
+                            <td>
+                                Probability and Statistics
+                            </td>
+                            <td>—</td>
+                            <td>
+                                <span class="result-status pending">
+                                    Not Available
+                                </span>
+                            </td>
+                        </tr>
+                        <tr data-module="Relational Database">
+                            <td>
+                                Relational Database
+                            </td>
+                            <td>—</td>
+                            <td>
+                                <span class="result-status pending">
+                                    Not Available
+                                </span>
+                            </td>
+                        </tr>
+                        <tr data-module="System Analysis and Design 2">
+                            <td>
+                                System Analysis and Design 2
+                            </td>
+                            <td>—</td>
+                            <td>
+                                <span class="result-status pending">
+                                    Not Available
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Semester 2</h2>
+                    <p>
+                        Your Semester 2 module results.
+                    </p>
+                </div>
+            </div>
+            <div class="results-table-container">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Module</th>
+                            <th>Result</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-module="Data Structures and Algorithms">
+                            <td>
+                                Data Structures and Algorithms
+                            </td>
+                            <td>—</td>
+                            <td>
+                                <span class="result-status pending">
+                                    Not Available
+                                </span>
+                            </td>
+                        </tr>
+                        <tr data-module="Linear Algebra">
+                            <td>
+                                Linear Algebra
+                            </td>
+                            <td>—</td>
+                            <td>
+                                <span class="result-status pending">
+                                    Not Available
+                                </span>
+                            </td>
+                        </tr>
+                        <tr data-module="Software Development 2">
+                            <td>
+                                Software Development 2
+                            </td>
+                            <td>—</td>
+                            <td>
+                                <span class="result-status pending">
+                                    Not Available
+                                </span>
+                            </td>
+                        </tr>
+                        <tr data-module="Server-Side Web Development">
+                            <td>
+                                Server-Side Web Development
+                            </td>
+                            <td>—</td>
+                            <td>
+                                <span class="result-status pending">
+                                    Not Available
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="results-note">
+            <div class="note-icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div id="results-empty-state">
+                <h3>No results recorded yet</h3>
+                <p>
+                    Your academic results will appear here once they are added.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

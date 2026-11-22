@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | StudySync</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+           <div class="logo">
+                <a href="index.html">
+                    <h2>StudySync</h2>
+                </a>
+           </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-book-open"></i>
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="assignments.html">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        Assignments
+                    </a>
+                </li>
+                <li>
+                    <a href="planner.html">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Planner
+                    </a>
+                </li>
+                <li>
+                    <a href="results.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Results
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h1>Welcome back, Student 👋</h1>
+            <p>
+                Keep track of your courses, assignments and academic progress.
+            </p>
+        </section>
+
+        <section class="dashboard-cards">
+            <div class="dashboard-card">
+                <div class="dashboard-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3>Current Average</h3>
+                <p class="stat">—</p>
+                <span>Academic results not recorded</span>
+
+            </div>
+
+            <div class="dashboard-card">
+                <div class="dashboard-icon">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <h3>Current Courses</h3>
+                <p class="stat">8</p>
+                <span>Modules across two semesters</span>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="dashboard-icon">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <h3>Assignments</h3>
+                <p class="stat">0</p>
+                <span>No upcoming deadlines</span>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h3>Study Goal</h3>
+                <p class="stat">—</p>
+                <span>Manage your study goals in Planner</span>
+            </div>
+        </section>
+        <section class="recent-section">
+            <h2>Recent Activity</h2>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="activity-icon">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <div>
+                        <h3>No recent activity</h3>
+                        <p>
+                            Your recent academic activity will appear here.
+                        </p>
+                    </div>
+                    <span>—</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

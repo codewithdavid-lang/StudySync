@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planner | StudySync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>StudySync</h2>
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-book-open"></i>
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="assignments.html">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        Assignments
+                    </a>
+                </li>
+                <li>
+                    <a href="planner.html">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Planner
+                    </a>
+                </li>
+                <li>
+                    <a href="results.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Results
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="planner-page">
+        <section class="page-intro">
+            <div>
+                <h1>Study Planner</h1>
+                <p>
+                    Organise your study sessions and keep track of your academic tasks.
+                </p>
+            </div>
+        </section>
+        <section class="planner-section">
+            <div class="section-heading">
+                 <div>
+
+            <h2>Add Study Session</h2>
+            <p>
+                Schedule a study session for one of your courses.
+            </p>
+        </div>
+                </div>
+                <form id="study-form" class="study-form">
+                    <div class="form-group">
+                        <label for="study-day">Day</label>
+                        <select id="study-day" required>
+                            <option value="">Select a day</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="study-course">Course</label>
+                        <select id="study-course" required>
+                            <option value="">Select a course</option>
+                            <option value="Object-Oriented Programming">
+                                Object-Oriented Programming
+                            </option>
+                            <option value="Probability and Statistics">
+                                Probability and Statistics
+                            </option>
+                            <option value="Relational Database">
+                                Relational Database
+                            </option>
+                            <option value="System Analysis and Design 2">
+                                System Analysis and Design 2
+                            </option>
+                            <option value="Data Structures and Algorithms">
+                                Data Structures and Algorithms
+                            </option>
+                            <option value="Linear Algebra">
+                                Linear Algebra
+                            </option>
+                            <option value="Software Development 2">
+                                Software Development 2
+                            </option>
+                            <option value="Server-Side Web Development">
+                                Server-Side Web Development
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="study-hours">Study Hours</label>
+                        <input
+                            type="number"
+                            id="study-hours"
+                            min="0.5"
+                            max="12"
+                            step="0.5"
+                            placeholder="e.g. 2"
+                            required
+                        >
+                    </div>
+                    <button type="submit" class="add-session-button">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Session
+                    </button>
+                </form>
+                <div class="section-heading">
+                    <h2>Weekly Overview</h2>
+                    <p>
+                        Plan your study time throughout the week.
+                    </p>
+                </div>
+            </div>
+            <div class="week-grid">
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Monday</h3>
+                        <span>0 hrs</span>
+                    </div>
+                    <div class="day-empty">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>No study sessions planned</p>
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Tuesday</h3>
+                        <span>0 hrs</span>
+                    </div>
+                    <div class="day-empty">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>No study sessions planned</p>
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Wednesday</h3>
+                        <span>0 hrs</span>
+                    </div>
+                    <div class="day-empty">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>No study sessions planned</p>
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Thursday</h3>
+                        <span>0 hrs</span>
+                    </div>
+                    <div class="day-empty">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>No study sessions planned</p>
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Friday</h3>
+                        <span>0 hrs</span>
+                    </div>
+
+                    <div class="day-empty">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>No study sessions planned</p>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Saturday</h3>
+                        <span>0 hrs</span>
+                    </div>
+
+                    <div class="day-empty">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>No study sessions planned</p>
+                    </div>
+                </div>
+                <div class="day-card">
+                    <div class="day-header">
+                        <h3>Sunday</h3>
+                        <span>0 hrs</span>
+                    </div>
+                    <div class="day-empty">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>No study sessions planned</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="planner-section">
+        <div class="section-heading">
+            <div>
+                <h2>Study Tasks</h2>
+                <p>Keep track of the academic tasks you want to complete.</p>
+            </div>
+        </div>
+        <form id="task-form" class="task-form">
+            <div class="form-group">
+                <label for="task-name">Task Name</label>
+                <input
+                    type="text"
+                    id="task-name"
+                    placeholder="e.g. Complete database ER diagram"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="task-course">Course</label>
+                <select id="task-course" required>
+                    <option value="">Select a course</option>
+                    <option>Object-Oriented Programming</option>
+                    <option>Probability and Statistics</option>
+                    <option>Relational Database</option>
+                    <option>System Analysis and Design 2</option>
+                    <option>Data Structures and Algorithms</option>
+                    <option>Linear Algebra</option>
+                    <option>Software Development 2</option>
+                    <option>Server-Side Web Development</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="task-date">Due Date</label>
+                <input type="date" id="task-date">
+            </div>
+
+            <button type="submit" class="add-session-button">
+                <i class="fa-solid fa-plus"></i>
+                Add Task
+            </button>
+
+        </form>
+
+        <div class="task-list" id="task-list">
+            <div class="planner-empty-state" id="task-empty-state">
+                <div class="empty-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <div>
+                    <h3>No study tasks yet</h3>
+                    <p>Add study tasks to organise your academic workload.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+                <section class="planner-section">
+                    <div class="section-heading">
+                        <div>
+                            <h2>Upcoming Deadlines</h2>
+                            <p>
+                                Keep important assignment deadlines visible.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="deadline-list" id="deadline-list">
+                        <div class="deadline-empty-state" id="deadline-empty-state">
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                        <h3>No upcoming deadlines</h3>
+                        <p>
+                            Assignment deadlines will appear here when they are added.
+                        </p>
+                        </div>
+                    </div>
+                </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

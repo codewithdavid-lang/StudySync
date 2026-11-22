@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignments | StudySync</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>StudySync</h2>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-book-open"></i>
+                        Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="assignments.html">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        Assignments
+                    </a>
+                </li>
+                <li>
+                    <a href="planner.html">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Planner
+                    </a>
+                </li>
+                <li>
+                    <a href="results.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Results
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="assignments-page">
+        <section class="page-intro">
+            <div>
+                <h1>Assignments</h1>
+                <p>
+                    Explore example assignments across your modules.
+                </p>
+            </div>
+        </section>
+
+        <section class="assignment-summary">
+            <div class="summary-card">
+                <div class="summary-icon">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+
+                <div>
+                    <span>Total Assignments</span>
+                    <strong>6</strong>
+                    <small>Example assignments</small>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                    <span>Due Soon</span>
+                    <strong>—</strong>
+                    <small>No deadlines recorded</small>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                    <span>Completed</span>
+                    <strong>—</strong>
+                    <small>Completion not tracked</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="assignments-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Example Assignments</h2>
+                    <p>
+                        Example assignments from your modules.
+                    </p>
+                </div>
+            </div>
+
+            <div class="assignment-list">
+                <div class="assignment-card">
+                    <div class="assignment-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="assignment-main">
+                        <h3>Object-Oriented Programming Assignment</h3>
+                        <p>
+                            Course: Object-Oriented Programming
+                        </p>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-icon statistics-icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <div class="assignment-main">
+                        <h3>Probability Analysis Coursework</h3>
+                        <p>
+                            Course: Probability and Statistics
+                        </p>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-icon database-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="assignment-main">
+                        <h3>Database Design Assignment</h3>
+                        <p>
+                            Course: Relational Database
+                        </p>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-icon system-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <div class="assignment-main">
+                        <h3>System Requirements Analysis</h3>
+                        <p>
+                            Course: System Analysis and Design 2
+                        </p>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-icon data-icon">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <div class="assignment-main">
+                        <h3>Data Structures Implementation</h3>
+                        <p>
+                            Course: Data Structures and Algorithms
+                        </p>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-icon software-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="assignment-main">
+                        <h3>Software Development Project</h3>
+                        <p>
+                            Course: Software Development 2
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="completed-section">
+            <h2>Completed Assignments</h2>
+            <div class="empty-state">
+                <div class="empty-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div>
+                    <h3>No completed assignments to display.</h3>
+                    <p>
+                        Assignment completion is not currently tracked.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
