@@ -36,17 +36,23 @@ StudySync is a student academic dashboard designed to help students organise the
 
 \### Dashboard
 
+
+
 !\[StudySync Dashboard](images/dashboard.jpg)
 
 
 
 \### Study Planner
 
+
+
 !\[StudySync Planner](images/planner.jpg)
 
 
 
 \### Academic Results
+
+
 
 !\[StudySync Results](images/results.jpg)
 
@@ -82,11 +88,11 @@ Data is not automatically synchronised between different browsers or devices.
 
 \## Project Structure
 
+
+
 ```text
 
-student academic dashboard/
-
-│
+StudySync/
 
 ├── index.html
 
@@ -104,8 +110,6 @@ student academic dashboard/
 
 ├── README.md
 
-│
-
 └── images/
 
 &#x20;   ├── dashboard.jpg
@@ -115,6 +119,8 @@ student academic dashboard/
 &#x20;   └── results.jpg
 
 ```
+
+
 
 \## Author
 
