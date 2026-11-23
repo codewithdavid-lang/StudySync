@@ -1,4 +1,4 @@
-\# StudySync – Student Academic Dashboard
+﻿# StudySync â€“ Student Academic Dashboard
 
 
 
@@ -6,75 +6,75 @@ StudySync is a student academic dashboard designed to help students organise the
 
 
 
-\## Live Demo
+## Live Demo
 
 
 
-\[Visit StudySync](https://codewithdavid-lang.github.io/StudySync/)
+[Visit StudySync](https://codewithdavid-lang.github.io/StudySync/)
 
 
 
-\## Features
+## Features
 
 
 
-\- \*\*Dashboard:\*\* Provides an overview of academic activities.
+- **Dashboard:** Provides an overview of academic activities.
 
-\- \*\*Courses:\*\* Displays modules organised by semester.
+- **Courses:** Displays modules organised by semester.
 
-\- \*\*Assignments:\*\* Helps students keep track of assignments and deadlines.
+- **Assignments:** Helps students keep track of assignments and deadlines.
 
-\- \*\*Study Planner:\*\* Allows students to organise study sessions and manage study tasks.
+- **Study Planner:** Allows students to organise study sessions and manage study tasks.
 
-\- \*\*Academic Results:\*\* Allows students to record assessment marks, calculate weighted results and monitor academic progress.
-
-
-
-\## Screenshots
+- **Academic Results:** Allows students to record assessment marks, calculate weighted results and monitor academic progress.
 
 
 
-\### Dashboard
+## Screenshots
 
 
 
-!\[StudySync Dashboard](images/dashboard.jpg)
+### Dashboard
 
 
 
-\### Study Planner
+![StudySync Dashboard](images/dashboard.jpg)
 
 
 
-!\[StudySync Planner](images/planner.jpg)
+### Study Planner
 
 
 
-\### Academic Results
+![StudySync Planner](images/planner.jpg)
 
 
 
-!\[StudySync Results](images/results.jpg)
+### Academic Results
 
 
 
-\## Technologies Used
+![StudySync Results](images/results.jpg)
 
 
 
-\- HTML5
-
-\- CSS3
-
-\- JavaScript
-
-\- Browser Local Storage
-
-\- Git and GitHub
+## Technologies Used
 
 
 
-\## Data Storage
+- HTML5
+
+- CSS3
+
+- JavaScript
+
+- Browser Local Storage
+
+- Git and GitHub
+
+
+
+## Data Storage
 
 
 
@@ -86,7 +86,7 @@ Data is not automatically synchronised between different browsers or devices.
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -94,41 +94,44 @@ Data is not automatically synchronised between different browsers or devices.
 
 StudySync/
 
-├── index.html
+â”œâ”€â”€ index.html
 
-├── courses.html
+â”œâ”€â”€ courses.html
 
-├── assignments.html
+â”œâ”€â”€ assignments.html
 
-├── planner.html
+â”œâ”€â”€ planner.html
 
-├── results.html
+â”œâ”€â”€ results.html
 
-├── style.css
+â”œâ”€â”€ style.css
 
-├── script.js
+â”œâ”€â”€ script.js
 
-├── README.md
+â”œâ”€â”€ README.md
 
-└── images/
+â””â”€â”€ images/
 
-&#x20;   ├── dashboard.jpg
+&#x20;   â”œâ”€â”€ dashboard.jpg
 
-&#x20;   ├── planner.jpg
+&#x20;   â”œâ”€â”€ planner.jpg
 
-&#x20;   └── results.jpg
+&#x20;   â””â”€â”€ results.jpg
 
 ```
 
 
 
-\## Author
+## Author
 
 
 
-\*\*David Adesokan\*\*
+**David Adesokan**
 
 
 
 BSc Computer Science Student
+
+
+
 
